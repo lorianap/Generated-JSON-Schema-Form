@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-604wwakM23pEysLJAhja8Lm42IIwYrJ0dEAqzFsj9pJ/P5buiujjywArgPCi8eoz" crossorigin="anonymous">
+
+<!-- Datepicker CSS -->
+<link rel="stylesheet" href="node_modules/pickadate/lib/themes/default.css">
+<link rel="stylesheet" href="node_modules/pickadate/lib/themes/default.date.css">
+
+<link rel="stylesheet" href="style_form.css">
+
+<script src="node_modules/angular-schema-form/dist/jquery-3.4.1.min.js"></script>
+
+<!-- Angular JS -->
+
+<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+<script type="text/javascript" src="node_modules/angular-sanitize/angular-sanitize.js"></script>
+<script type="text/javascript" src="node_modules/objectpath/lib/ObjectPath.js"></script>
+<script type="text/javascript" src="node_modules/tv4/tv4.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+
+
+<script type="text/javascript" src="node_modules/angular-schema-form/dist/moment.min.js"></script>
+
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" integrity="sha384-EKxMxgJ+EnnZ5yB3ygGPe1lXaPvlAzKFXU+wW7kO9Bn9ZCgFRrc3wWtCnsDHbemf" crossorigin="anonymous"></script> -->
+
+
+<script type="text/javascript" src="node_modules/pickadate/lib/picker.js"></script>
+<script type="text/javascript" src="node_modules/pickadate/lib/picker.date.js"></script>
+
+<script type="text/javascript" src="node_modules/angular-schema-form/dist/schema-form.js"></script>
+<script type="text/javascript" src="node_modules/angular-schema-form/dist/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="node_modules/angular-schema-form/dist/bootstrap-decorator.min.js"></script>
+
+
+<script src="script_form.js" charset="utf-8"></script>
+
+
+
+</head>
+
+<body ng-app="myModule" ng-controller="FormController">
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div>
+          <h3>The Generated Form</h3>
+        <form 
+        name="myForm"
+        sf-schema="schema" 
+        sf-form="form" 
+        sf-model="model"
+        ng-submit="onSubmit(myForm)"></form>
+
+      </div>
+    </div>
+    <div class="row">
+      <h3>Model</h3>
+      <pre class="ng-binding">{{model | json : 1}}</pre>
+    </div>
+  </div>
+
+  
+<!--
+      <form name="ngform"
+            sf-model="modelData"
+            sf-form="form"
+            sf-schema="schema"
+            ng-submit="submitForm(ngform,modelData)">
+      </form>
+-->
+ 
+      
+
+
+
+
+</body>
+
+</html>
